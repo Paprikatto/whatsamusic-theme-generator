@@ -31,8 +31,8 @@ const themesData = [
     "Piosenka elektroniczna",
 ]
 let counter = 0;
-
-function pickTheme(themes){
+let themes = [...themesData];
+function pickTheme(){
     if(themes.length === 0){
         return;
     }
@@ -42,19 +42,25 @@ function pickTheme(themes){
     document.getElementById('theme-container').innerHTML = theme;
     counter++;
     updateCounter();
+    console.log(themes);
 }
+
 function resetThemes(){
     themes = [...themesData];
     counter = 0;
     updateCounter();
+    document.getElementById('theme-container').innerHTML = "Wylosuj temat";
+    console.log(themes);
 }
+
 function updateCounter(){
     document.getElementById('counter').innerHTML = counter.toString() + "/" + themesData.length.toString();
 }
+
 document.addEventListener('DOMContentLoaded', async () => {
     let themes = [...themesData];
     counter = 0;
     updateCounter();
-    document.getElementById('play-button').addEventListener('click', () => pickTheme(themes));
+    document.getElementById('play-button').addEventListener('click', () => pickTheme());
     document.getElementById('reset-button').addEventListener('click', () => resetThemes());
 }); 
