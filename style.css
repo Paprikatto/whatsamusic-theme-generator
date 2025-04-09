@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #e7e7e7;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.limelight-regular {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+#title{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #e7e7e7;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    #title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #title {
+        font-size: 2.5rem;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    #title {
+        font-size: 2rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+.gradient {
+    background-image: linear-gradient(
+      30deg,
+      hsl(290deg 90% 4%) 0%,
+      hsl(291deg 90% 5%) 13%,
+      hsl(292deg 90% 5%) 26%,
+      hsl(292deg 89% 6%) 40%,
+      hsl(292deg 89% 6%) 53%,
+      hsl(291deg 89% 7%) 65%,
+      hsl(291deg 89% 7%) 75%,
+      hsl(286deg 70% 11%) 84%,
+      hsl(287deg 72% 14%) 90%,
+      hsl(287deg 75% 17%) 95%,
+      hsl(288deg 79% 20%) 97%,
+      hsl(289deg 83% 23%) 99%,
+      hsl(290deg 89% 26%) 100%
+    );
+  }
+#buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#buttons-container button{
+    background-color: #f09dde;
+    color: #1f1f1f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+#buttons-container button:hover{
+    background-color: #bb7bad;
+}
+#counter{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+#theme-container{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
