@@ -6,6 +6,7 @@ const themesData = [
     "Piosenka z lat 2000",
     "Piosenka z lat 2010",
     "Piosenka z lat 2020",
+    "Duet kobieta i mężczyzna",
     "Smutna piosenka",
     "Wesoła piosenka",
     "Piosenka o jeżdżeniu (czymkolwiek)",
